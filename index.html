@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<title> My Website</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+html, body {
+  height: 100%;
+}
+h1, h3, p, li, ul, pre {text-align: center;
+color:white;
+font-family: "Roboto", sans-serif";
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 120%;
+  background-color: #171717;
+  line-height: 1.6;
+  position: relative;
+  
+
+}
+
+#navbar {
+  background-color: #404040;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  
+  color: #ccccff;
+}
+<!--The background-->
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+}
+.lines .line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.lines .line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, #ffffff), to(#ffffff));
+  background: linear-gradient(to bottom, rgba(0,0,255,0.5) 0%, #ffffff 75%, #ffffff 100%);
+  -webkit-animation: run 7s 0s infinite;
+          animation: run 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.lines .line:nth-child(1) {
+  margin-left: -25%;
+}
+
+.lines .line:nth-child(1)::after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.lines .line:nth-child(3) {
+  margin-left: 25%;
+}
+
+.lines .line:nth-child(3)::after {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+@-webkit-keyframes run {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@keyframes run {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+</style>
+
+<body>
+
+<script>
+ alert("Welcome :)");
+</script>
+
+<br><br><br><br> <br><br><br>
+<h1 id="home"> Welcome to my Website</h1>
+<br>
+<p>My name is <b>Hope Yentis</b> and i'm a QA engineer
+<br><br>
+<h3>A little bit about myself:</h3> <br>
+
+<pre style="font-size: 15px">
+I can work independently and in close cooperation with team members to understand:
+system design and plan relevant tests, Document defects and report errors to development teams
+Im able to conduct tests in various manners including:
+Manual, web, mobile (iOS and android), black box, sanity, regression, acceptance
+Ensure ongoing product quality throughout the software development lifecycle, Reproduce issues
+I worked with various bug documentation tools (Asana and Jira)
+</pre>
+<br>
+<p>Some of my hobbies are-
+ <ul>Gaming</ul>
+ <ul>Traveling </ul>
+ <ul>Skiing</ul>
+ <ul>Reading</ul>
+ <ul>Photograthy</ul>
+ <ul>rollerblading</ul>
+ <ul>Learning new things</ul>
+</p> 
+
+
+<div id="navbar">
+  <a href="#home">Home</a>
+  <a href="https://hope-y.github.io/Resume/" target="_blank">Resume</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+
+<!--The lines for the background-->
+<div class="lines">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+ <h3 id="contact">Contact me:</h3>
+<p>
+<br>
+&#9743;
+050-6968634<br>
+<a href="mailto:hope.yentis@gmail.com" style="color:white">
+<i class="fa fa-envelope-open-o"> hope.yentis@gmail.com</i> </a><br>
+<a href="https://www.linkedin.com/in/hope-yentis-b328271ab/" target="_blank style="color:white"">  
+<i class="fa fa-linkedin" style="color:white"></i></a>
+</p>
+
+</body>
+</html>
